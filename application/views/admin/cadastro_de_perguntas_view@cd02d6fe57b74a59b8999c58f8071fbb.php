@@ -1,3 +1,4 @@
+
 <div class="header">
     <h2 class="form-signin-heading">Perguntas do dia</h2>
 </div>
@@ -16,12 +17,12 @@ if ($this->session->flashdata()) {
     <div class='form-group'>
         <div class="row">
             <div class="col-xs-6">
-                <label for="valid" class="">Válido de:</label>
-                <input class="form-control" type="datetime-local" name="valid_from" id="valid_from" value="<?php echo ($this->input->post('valid_from')) ? $this->input->post('valid_from') : ""; ?>" placeholder="Válido de" maxlength="10" required />                
+                <label for="valid" class="sr-only">Válido de:</label>
+                <input class="form-control" type="text" name="valid_from" id="valid_from" value="<?php echo ($this->input->post('valid_from')) ? $this->input->post('valid_from') : ""; ?>" placeholder="Válido de" maxlength="10" required />                
             </div>
             <div class="col-xs-6">
-                <label for="valid" class="">Válido até:</label>
-                <input class="form-control" type="datetime-local" name="valid_until" id="valid_until" value="<?php echo ($this->input->post('valid_until')) ? $this->input->post('valid_until') : ""; ?>" placeholder="Válido até" maxlength="10" required />                
+                <label for="valid" class="sr-only">Válido até:</label>
+                <input class="form-control" type="text" name="valid_until" id="valid_until" value="<?php echo ($this->input->post('valid_until')) ? $this->input->post('valid_until') : ""; ?>" placeholder="Válido até" maxlength="10" required />                
             </div>
         </div>
     </div>

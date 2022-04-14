@@ -1,0 +1,112 @@
+body {
+  font-family: Roboto, sans-serif;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+h3 {
+  font-size: 1.2em; }
+
+/**********************
+ * LOGIN
+ **********************/
+.login-links {
+  margin-top: 30px; }
+
+.text-center {
+  text-align: center; }
+
+.menuInferior .btn-group span {
+  font-size: large; }
+.menuInferior .btn-default {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  background-image: none;
+  text-shadow: none; }
+.menuInferior .btn {
+  height: 60px;
+  font-size: small; }
+
+.menuSuperior {
+  background-color: #333;
+  color: #fff;
+  text-align: center; }
+
+/**********************
+ * MENU
+ **********************/
+.user {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/**********************
+ * PERGUNTA DO DIA
+ **********************/
+.btn-election label {
+  margin: 20px auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/**********************
+ * QUADRO DE MEDALHAS
+ **********************/
+.quadro-de-medalhas {
+  font-size: 9px;
+  width: 100%; }
+
+.navegacao-esportes,
+.glb-conteudo,
+.bandeira {
+  display: none; }
+
+.medalha:after {
+  content: "<br/>"; }
+
+.tabela-pontos-th-duplo span,
+.tabela-pontos-th-longo span {
+  display: block; }
+
+.tabela-times-time strong {
+  float: left;
+  width: 80%; }
+
+.tabela-pontos {
+  width: 90%; }
+
+.tabela-times-head, .tabela-pontos-th-duplo, .tabela-pontos-th-longo {
+  height: 100px;
+  background-color: lightslategrey;
+  text-align: center; }
+  .tabela-times-head thead, .tabela-pontos-th-duplo thead, .tabela-pontos-th-longo thead {
+    /*margin-bottom: 10px;*/ }
+
+.tabela-times {
+  float: left;
+  width: 40%; }
+  .tabela-times tr:nth-child(even) {
+    background-color: lightgrey; }
+  .tabela-times td {
+    overflow: hidden;
+    white-space: nowrap; }
+
+.tabela-scroll {
+  float: left;
+  width: 60%; }
+  .tabela-scroll th {
+    padding: 10px; }
+  .tabela-scroll td {
+    text-align: center; }
+  .tabela-scroll tr:nth-child(even) {
+    background-color: lightgrey; }
+
+/**********************
+ * NOTICIAS
+ **********************/
+.noticia {
+  margin: 20px auto;
+  padding: 7px 10px;
+  border: 1px solid gray;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=layout.css.map */

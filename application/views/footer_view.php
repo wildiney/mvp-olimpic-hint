@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
         <p class="text-center"><small><a href="#">regulamento</a> | <a href="#">dúvidas</a></small></p>
-        <p class="text-center"><small>&copy <?php echo date('Y'); ?> <a href="http://www.indracompany.com">indracompany.com</a></small></p>
+        <p class="text-center"><small>&copy <?php echo date('Y-m-d H:i:s'); ?> <a href="http://www.indracompany.com">indracompany.com</a></small></p>
     </div>
 </nav>
 </div>
@@ -11,7 +11,9 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<script src="<?php echo base_url(); ?>vendor/components/jquery/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>assets/js/scripts.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/script.min.js" type="text/javascript"></script>
+
 </body>
 </html>

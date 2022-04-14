@@ -9,4 +9,7 @@ $(document).ready(function () {
             $("button#inputCadastrar").attr("disabled", true);
         }
     });
+    $("#nome_completo").on('blur', function(){
+        alert(this.val());
+    });
 });

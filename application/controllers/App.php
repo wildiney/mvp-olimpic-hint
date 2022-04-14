@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class App extends CI_Controller {
 
+    
     protected $user;
 
     public function __construct() {

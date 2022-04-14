@@ -13,19 +13,29 @@ if ($this->session->flashdata()) {
     <?php
 }
 ?>
-<form class="" action="<?php echo base_url() ?>cadastro/" method="post">
-    <div class='form-group'>
-        <label for="matricula" class="sr-only">Matrícula</label>
-        <input class="form-control" type="text" name="matricula" id="matricula" value="<?php echo ($this->input->post('matricula')) ? $this->input->post('matricula') : ""; ?>" placeholder="000000" pattern="[0-9]*" maxlength="6" required />
+<form id='form_cadastro' class="" action="<?php echo base_url() ?>cadastro/" method="post">
+
+    <div class="row">
+        <div class='col-xs-12 col-sm-6'>
+            <div class='form-group'>
+                <label for="matricula" class="sr-only">Matrícula</label>
+                <input class="form-control" type="text" name="matricula" id="matricula" value="<?php echo ($this->input->post('matricula')) ? $this->input->post('matricula') : ""; ?>" placeholder="Matrícula" pattern="[0-9]*" maxlength="6" required />
+            </div>
+        </div>
+        <div class='col-xs-12 col-sm-6'>
+            <div class='form-group'>
+                <label for="data_nascimento" class="sr-only">Data de Nascimento</label>
+                <input class="form-control" type="date" name="data_nascimento" id="data_nascimento" value="<?php echo ($this->input->post('data_nascimento')) ? $this->input->post('data_nascimento') : ""; ?>" placeholder="Data de Nascimento" maxlength="10" required />
+            </div>
+        </div>
     </div>
+
+
     <div class="form-group">
         <label for="nome_completo" class="sr-only">Nome Completo</label>
-        <input class="form-control" type="text" name="nome_completo" id="nome_completo" value="<?php echo ($this->input->post('nome_completo')) ? $this->input->post('nome_completo') : ""; ?>" placeholder="Nome Completo" maxlength="50" required />
+        <input class="form-control" type="text" name="nome_completo" id="nome_completo" value="<?php echo ($this->input->post('nome_completo')) ? $this->input->post('nome_completo') : ""; ?>" placeholder="Nome Completo" maxlength="50" pattern="" required />
     </div>
-    <div class="form-group">
-        <label for="data_nascimento" class="sr-only">Data de Nascimento</label>
-        <input class="form-control" type="date" name="data_nascimento" id="data_nascimento" value="<?php echo ($this->input->post('data_nascimento')) ? $this->input->post('data_nascimento') : ""; ?>" placeholder="Data de Nascimento" maxlength="10" required />
-    </div>
+
     <div class='form-group'>
         <label for="email" class="sr-only">Email</label>
         <input class='form-control' name="email" type="email" id="email" value="<?php echo ($this->input->post('email')) ? $this->input->post('email') : ""; ?>" class="form-control" placeholder="Email" required />
@@ -36,13 +46,13 @@ if ($this->session->flashdata()) {
     </div>
     <div class="form-group">
         <div class="row">
-            <div class="col-xs-9">
-                <label for="cidade" class="sr-only">Cidade</label>
-                <input class="form-control" type="text" name="cidade" id="cidade" value="<?php echo ($this->input->post('cidade')) ? $this->input->post('cidade') : ""; ?>" placeholder="Cidade" required />
-            </div>
-            <div class="col-xs-3">
+            <div class="col-xs-4">
                 <label for="estado" class="sr-only">Estado</label>
                 <input class="form-control" type="text" name="estado" id="estado" value="<?php echo ($this->input->post('estado')) ? $this->input->post('estado') : ""; ?>" placeholder="Estado" maxlength="2" required />
+            </div>
+            <div class="col-xs-8">
+                <label for="cidade" class="sr-only">Cidade</label>
+                <input class="form-control" type="text" name="cidade" id="cidade" value="<?php echo ($this->input->post('cidade')) ? $this->input->post('cidade') : ""; ?>" placeholder="Cidade" required />
             </div>
         </div>
     </div>

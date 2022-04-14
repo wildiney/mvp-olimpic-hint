@@ -1,12 +1,10 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
-
     private $dataSession;
     protected $title = "Login Administrativo";
-    protected $action = "/admin/login/";
+   
 
     public function __construct() {
         parent::__construct();
@@ -18,7 +16,6 @@ class Login extends CI_Controller {
 
     public function index() {
         $data['title'] = $this->title;
-        $data['action'] = $this->action;
 
         if ($this->input->post()) {
             $email = $this->input->post("email");

@@ -6,15 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Palpite Olímpico</title>
-
+        
         <link href="<?php echo base_url(); ?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo base_url(); ?>vendor/twbs/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo base_url(); ?>assets/css/layout.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo base_url(); ?>assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url(); ?>assets/css/style.min.css" rel="stylesheet" type="text/css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100,300' rel='stylesheet' type='text/css'>
-
-        <script src="<?php echo base_url(); ?>vendor/components/jquery/jquery.min.js" type="text/javascript"></script>
-
     </head>
 
     <body>
@@ -46,7 +41,7 @@
                         <?php else: ?>
                             <?php if($this->session->userdata('logged_in')==TRUE): ?>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="<?php echo base_url()?>login/logout/">OLÁ <span class="user"><?php echo (isset($user))?$user:""; ?></span> | SAIR</a></li>
+                                <li>OLÁ <span class="user"><?php echo (isset($user))?$user:""; ?></span> | <a href="<?php echo base_url()?>login/logout/">SAIR</a></li>
                             </ul>
                             <?php endif;?>
                         <?php endif;?>
