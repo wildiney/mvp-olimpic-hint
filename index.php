@@ -53,6 +53,8 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
+date_default_timezone_set('America/Sao_Paulo');
+
 	define('ENVIRONMENT', 'development');
 
 /*

@@ -19,9 +19,19 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /nbproject/
 .idea/*
 
-## Sublime Text cache files
+# Sublime Text cache files
+#-------------------------
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+
+# NODE folder
+#-------------------------
+node_modules/
+data
+*.env
+application/config/development/
+application/config/production/
+ci_sessions
