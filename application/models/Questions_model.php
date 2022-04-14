@@ -6,14 +6,16 @@
  * @author wildiney
  */
 class Questions_model extends CI_Model {
-    function convertDate($data){
+    
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function convertDate($data){
         $dataExploded = explode("/",$data);
         $newData = $dataExploded[2]."-".$dataExploded[1]."-".$dataExploded[0];
         return $newData;
     }
-    public function __construct() {
-        parent::__construct();
-        }
     
     public function save($data){
         $data['valid_from'] = $this->convertDate($data['valid_from']);
